@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="hiv_impact <= -0.199\ngini = 0.5\nsamples = 36842\nvalue = [18421.0, 18421.0]\nclass = Non-Resistant"] ;
+1 [label="e_rr_pct_new <= 1.062\ngini = 0.301\nsamples = 21477\nvalue = [17507.397, 3963.721]\nclass = Non-Resistant"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="c_cdr <= 0.04\ngini = 0.24\nsamples = 20112\nvalue = [17303.485, 2802.217]\nclass = Non-Resistant"] ;
+1 -> 2 ;
+3 [label="gini = 0.499\nsamples = 2658\nvalue = [1264.451, 1393.605]\nclass = Resistant"] ;
+2 -> 3 ;
+4 [label="gini = 0.148\nsamples = 17454\nvalue = [16039.034, 1408.612]\nclass = Non-Resistant"] ;
+2 -> 4 ;
+5 [label="e_rr_pct_new <= 2.563\ngini = 0.254\nsamples = 1365\nvalue = [203.911, 1161.504]\nclass = Resistant"] ;
+1 -> 5 ;
+6 [label="gini = 0.079\nsamples = 944\nvalue = [38.983, 905.393]\nclass = Resistant"] ;
+5 -> 6 ;
+7 [label="gini = 0.477\nsamples = 421\nvalue = [164.928, 256.111]\nclass = Resistant"] ;
+5 -> 7 ;
+8 [label="e_rr_pct_new <= -0.513\ngini = 0.112\nsamples = 15365\nvalue = [913.603, 14457.279]\nclass = Resistant"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="e_rr_pct_new <= -0.517\ngini = 0.482\nsamples = 626\nvalue = [372.838, 253.11]\nclass = Non-Resistant"] ;
+8 -> 9 ;
+10 [label="gini = 0.492\nsamples = 450\nvalue = [196.914, 253.11]\nclass = Resistant"] ;
+9 -> 10 ;
+11 [label="gini = 0.0\nsamples = 176\nvalue = [175.924, 0.0]\nclass = Non-Resistant"] ;
+9 -> 11 ;
+12 [label="hiv_impact <= -0.191\ngini = 0.071\nsamples = 14739\nvalue = [540.765, 14204.169]\nclass = Resistant"] ;
+8 -> 12 ;
+13 [label="gini = 0.249\nsamples = 2440\nvalue = [355.845, 2084.905]\nclass = Resistant"] ;
+12 -> 13 ;
+14 [label="gini = 0.03\nsamples = 12299\nvalue = [184.92, 12119.263]\nclass = Resistant"] ;
+12 -> 14 ;
+}
